@@ -1,10 +1,43 @@
-<div class="font-inter p-12 bg-gray-100">
+<html>
+<head>
+  <title>FunzelUI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FunzelUI is a small UI-Kit made with TailwindCSS">
+  <meta name="keywords" content="CSS, UI, TailwindCSS">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    @import url('https://rsms.me/inter/inter.css');
+    html { font-family: 'Inter', sans-serif; }
+    @supports (font-variation-settings: normal) {
+      html { font-family: 'Inter var', sans-serif; }
+    }
+
+    ::selection {
+      background: #1444ff; /* WebKit/Blink Browsers */
+      color: white;
+    }
+    ::-moz-selection {
+      background: #1444ff; /* Gecko Browsers */
+      color: white;
+    }
+
+    .font-inter {
+    	font-family: "Inter", "Inter V", system-ui, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+<div class="font-inter py-12 px-5 mx-auto max-w-xl">
   <p class="uppercase text-sm font-semibold text-gray-600">
     A small UI-Kit made with TailwindCSS
   </p>
-  <h1 class="mr-auto font-bold text-4xl mb-3 bg-gradient-to-r from-orange-400 to-teal-400 text-transparent bg-clip-text">
-    FunzelUI
-  </h1>
+  <div class="flex">
+    <h1 class="font-bold text-4xl mb-3 bg-gradient-to-r from-orange-400 to-teal-400 text-transparent bg-clip-text">
+      FunzelUI
+    </h1>
+    <div class="w-full"></div>
+  </div>
 
   <p class="font-serif italic block">
     I've been using TailwindCSS for quite some time now,
@@ -16,17 +49,21 @@
   <hr class="my-3"/>
 
   <p>
-    Introducing <b>FunzelUI</b>, a UI-Kit with basic Tailwind elements. Available soon in React, Svelte and Angular.
+    Introducing <b>FunzelUI</b>, a UI-Kit with basic Tailwind-styled elements. Available soon in React, Svelte and Angular.
   </p> 
 
   <h2 class="font-semibold text-2xl mt-8">
     Containers
   </h2>
-  <p>Pretending I know what I am doing currently, here are a few suggestions on how to display content.</p>
+  <p>
+    A good UI-Kit should always be equipped with a way to display content.
+    The contents of the conatiners you see below are just placeholder components.
+    You can use them to display your own content already formatted or fill the container with completely new content.
+  </p>
 
   <p class="mt-4 mb-2 font-semibold ">Outstanding Content</p>
 
-  <div class="px-2 py-4 shadow-lg bg-white sm:flex rounded-lg">
+  <div class="px-2 py-4 cursor-pointer shadow hover:shadow-lg bg-white transition duration-200 sm:flex rounded-lg">
     <div style="margin-top: 2.5px" class="bg-gray-500 mb-3 sm:mb-auto animate-pulse mx-2 rounded-full h-5 w-5"></div>
     <div class="ml-1">
       <p class="font-medium">Fix all the things</p>
@@ -74,4 +111,8 @@
       Warning ->
     </button>
   </div>
+
+  <div class="mt-10 text-center text-gray-500"><a href="./impress.html">Impress</a> | <a href="./privacy.html">Privacy</a></div>
 </div>
+</body>
+</html>
